@@ -72,8 +72,8 @@ function isOneCountry(data) {
 
 function autocompleteInput() {
     const nameTargets = document.querySelectorAll('#flags');
-
-  nameTargets.forEach((nameTarget) => {
+    nameTargets.forEach((nameTarget) => {
+        nameTarget.style.cursor = 'pointer';
     nameTarget.addEventListener('click', currentCountry);
   });
 }
